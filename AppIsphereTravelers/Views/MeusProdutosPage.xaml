@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppIsphereTravelers.Views.MeusProdutosPage"
+             Title="{Binding WordCount}"
+             BackgroundImage="fundovazio"
+             x:Name="contentPai"
+             >
+    <ContentPage.Content>
+        <StackLayout x:Name="me" Margin="10, 10, 10, 10">
+            <ScrollView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+				                           RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"                                           
+                                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.0}">
+                <Label Text="Meus Produtos" FontSize="Large" Margin="0, 0, 0, 10"/>
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" x:Name="LoadPageObjecto">
+                    <ActivityIndicator WidthRequest="40" HeightRequest="40" IsRunning="True" IsEnabled="True"/>
+                    <Label x:Name="LoadInfor" Text="Carregando dados..." FontSize="Large" />
+                </StackLayout>
+                <StackLayout x:Name="FrameProdutos">
+                    
+
+                    <!--
+            <Frame CornerRadius="15"  Padding="0" IsClippedToBounds="True"  HeightRequest="120"  Margin="5,5,5,5">
+                <StackLayout Orientation="Horizontal">
+                    <Image  WidthRequest="120" HeightRequest="120" Source="http://www.ispheretravelers.com/my-account/photo/2018.06.01-21.34.21.jpg" />
+                    <StackLayout Orientation="Vertical" WidthRequest="100">
+                        <Label Text="Produto" />
+                        <Label Text="name" />
+                        <Label Text="name" />
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" WidthRequest="100" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" Margin="0, 0 ,10, 10">
+                        <Button Text="Detalhes"/>
+                        <Button Text="Relatorio"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="15"  Padding="0" IsClippedToBounds="True"  HeightRequest="120"  Margin="5,5,5,5">
+                <StackLayout Orientation="Horizontal">
+                    <Image  WidthRequest="120" HeightRequest="120" Source="http://www.ispheretravelers.com/my-account/photo/2018.06.01-21.34.21.jpg" />
+                    <StackLayout Orientation="Vertical" WidthRequest="100">
+                        <Label Text="Produto" />
+                        <Label Text="name" />
+                        <Label Text="name" />
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" WidthRequest="100" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" Margin="0, 0 ,10, 10">
+                        <Button Text="Detalhes"/>
+                        <Button Text="Relatorio"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="15"  Padding="0" IsClippedToBounds="True"  HeightRequest="120"  Margin="5,5,5,5">
+                <StackLayout Orientation="Horizontal">
+                    <Image  WidthRequest="120" HeightRequest="120" Source="http://www.ispheretravelers.com/my-account/photo/2018.06.01-21.34.21.jpg" />
+                    <StackLayout Orientation="Vertical" WidthRequest="100">
+                        <Label Text="Produto" />
+                        <Label Text="name" />
+                        <Label Text="name" />
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" WidthRequest="100" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" Margin="0, 0 ,10, 10">
+                        <Button Text="Detalhes"/>
+                        <Button Text="Relatorio"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="15"  Padding="0" IsClippedToBounds="True"  HeightRequest="120"  Margin="5,5,5,5">
+                <StackLayout Orientation="Horizontal">
+                    <Image  WidthRequest="120" HeightRequest="120" Source="http://www.ispheretravelers.com/my-account/photo/2018.06.01-21.34.21.jpg" />
+                    <StackLayout Orientation="Vertical" WidthRequest="100">
+                        <Label Text="Produto" />
+                        <Label Text="name" />
+                        <Label Text="name" />
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" WidthRequest="100" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" Margin="0, 0 ,10, 10">
+                        <Button Text="Detalhes"/>
+                        <Button Text="Relatorio"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="15"  Padding="0" IsClippedToBounds="True"  HeightRequest="120"  Margin="5,5,5,5">
+                <StackLayout Orientation="Horizontal">
+                    <Image  WidthRequest="120" HeightRequest="120" Source="http://www.ispheretravelers.com/my-account/photo/2018.06.01-21.34.21.jpg" />
+                    <StackLayout Orientation="Vertical" WidthRequest="100">
+                        <Label Text="Produto" />
+                        <Label Text="name" />
+                        <Label Text="name" />
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" WidthRequest="100" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand" Margin="0, 0 ,10, 10">
+                        <Button Text="Detalhes"/>
+                        <Button Text="Relatorio"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            -->
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

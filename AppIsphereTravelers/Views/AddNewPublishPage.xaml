@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Namespace="clr-namespace:AppIsphereTravelers.Classes"
+             x:Class="AppIsphereTravelers.Views.AddNewPublishPage"
+             BackgroundImage="fundovazio"
+             BackgroundColor="Transparent"
+             >
+    <!--xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"-->
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Order="Primary" Clicked="Save" Text="Salvar" x:Name="btnSalvar"/>
+
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout x:Name="objPai" Margin="10, 10, 10, 10">
+            <StackLayout x:Name="ContainerLoad" IsVisible="true" Margin="10, 10,  10, 10">
+                <ActivityIndicator x:Name="LoadObj" WidthRequest="40" HeightRequest="40" IsRunning="True" IsEnabled="True"/>
+                <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"  x:Name="NameLoad" Text="Carregando dados..." FontSize="Large" />
+            </StackLayout>
+            <StackLayout x:Name="ContainerDados" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Label Text="Local da Viagem"/>
+                <Entry x:Name="Viagem"/>
+                <Label Text="Viajando com"/>
+                <StackLayout x:Name="ViagenComAnjo" />
+                <Label Text="Descrição da viagem"/>
+                <Editor Text="" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Keyboard="Chat"/>
+
+                <StackLayout  Orientation="Horizontal" >
+                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <Label Text="Data da viagem" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+                        <DatePicker Format="dd/MM/yyyy" x:Name="data" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand"/>
+                    </StackLayout>
+                    <Button Text="" Clicked="NovaFoto" Image="camera.png"/>
+                </StackLayout>
+
+
+                <ScrollView VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" >
+                    <StackLayout HorizontalOptions="StartAndExpand"  VerticalOptions="StartAndExpand" Orientation="Horizontal" x:Name="Imagens">
+
+
+                    </StackLayout>
+
+                </ScrollView>
+            </StackLayout>
+            <!--<ScrollView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+				                           RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"                                           
+                                           RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.0}"> -->
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

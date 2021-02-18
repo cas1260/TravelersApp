@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppIsphereTravelers.Views.LoginPage"
+             NavigationPage.BackButtonTitle="Iphere"
+              NavigationPage.HasNavigationBar="False"
+             BackgroundImage="login">
+    <ContentPage.Content>
+        <StackLayout Orientation='Vertical' VerticalOptions='FillAndExpand'>
+
+
+            <StackLayout VerticalOptions="StartAndExpand" Padding="10, 230, 10, 10"  x:Name="divDados">
+
+                <Label Margin="0, 0" FontSize="Micro">Login</Label>
+                <Entry Text="" Placeholder="Digite seu login" x:Name="txtlogin" FontSize="Micro"></Entry>
+                <Label FontSize="Micro" x:Name="lblsenha">Senha</Label>
+                <Entry FontSize="Micro" Text="" IsPassword="True" Placeholder="Digite sua senha"  x:Name="txtSenha"></Entry>
+                <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" Orientation="Horizontal">
+                    <Button Text="Entrar" x:Name="cmdlogar" WidthRequest="120" FontSize="Micro" ></Button>
+                    <Button Text="Cadastrar" x:Name="cmdNovo"  WidthRequest="120" FontSize="Micro"></Button>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" Orientation="Horizontal" Margin="10, 10, 10, 10">
+                    <Button Text="EN" x:Name="btnEN" WidthRequest="50" FontSize="Micro" Clicked="BtnEN_Clicked" ></Button>
+                    <Button Text="PT" x:Name="btnPT"  WidthRequest="50" FontSize="Micro" Clicked="BtnPT_Clicked"></Button>
+                </StackLayout>
+                
+                <Label x:Name="Msg"/>
+            </StackLayout>
+            <StackLayout  VerticalOptions='CenterAndExpand' x:Name="divLoad" IsVisible="False" Padding="10, 230, 10, 10" >
+                <ActivityIndicator HorizontalOptions="CenterAndExpand" IsVisible="True" IsRunning="True" Margin="10, 10, 10, 10"/>
+                <Label x:Name="lblAguarde" HorizontalOptions="CenterAndExpand"  FontSize="Large">Aguarde...</Label>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="End">
+                <Label Text="Emergencia Emergencia Emergencia Emergencia" TextColor="Transparent" BackgroundColor="Transparent" HeightRequest="200" Margin="0, 0, 0, 30" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                                    Tapped="clickEmergencia"
+                                    NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <!-- <Button Text="Pressione em caso de emergência" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" BorderColor="Transparent" BackgroundColor="Transparent"   BorderWidth="0" BorderRadius="100" HeightRequest="200" Margin="0, 0, 0, 30"></Button>-->
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

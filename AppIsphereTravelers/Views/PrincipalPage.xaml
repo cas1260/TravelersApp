@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppIsphereTravelers.Views.PrincipalPage"
+                     NavigationPage.HasNavigationBar="False"
+             BackgroundImage="fundovazio">
+    <ContentPage.Content>
+        <StackLayout x:Name="me" Margin="5, 5, 5, 5">
+            <StackLayout HorizontalOptions="FillAndExpand"  x:Name="FrameSuperior">
+                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0, 0,0" WidthRequest="120" HeightRequest="120" >
+                        <Frame CornerRadius="120" Margin="0" Padding="0" IsClippedToBounds="True" WidthRequest="120" HeightRequest="120">
+                            <Image x:Name="foto"  WidthRequest="80" HeightRequest="80" Source="" />
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0, 30, 0,0">
+                        <Label x:Name="nome" Text="" HorizontalOptions="FillAndExpand"  Font="Verdana, 18" TextColor="Black"></Label>
+                        <!--<Label x:Name="nome1" HorizontalOptions="FillAndExpand" Font="Verdana, 14"  TextColor="Black"></Label>-->
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="0, 0, 0, 0" >
+
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
+                        <StackLayout>
+                            <StackLayout>
+                                <Label />
+                                <BoxView HeightRequest="1"  BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
+                                <Label />
+                            </StackLayout>
+                            <Label x:Name="lblPerfil" Text="Meu Perfil"  TextColor="Black" Font="Verdana, 20" HeightRequest="30"/>
+                            <Label x:Name="lblProdutos" Text="Meus Produtos"  TextColor="Black" Font="Verdana, 20" HeightRequest="30" />
+                            <Label x:Name="lblAlertaMedicado" Text="Alerta de Medicamentos"  TextColor="Black" Font="Verdana, 20" HeightRequest="30" />
+                            <Label x:Name="MinhaRede" Text="Minha rede social" TextColor="Black" Font="Verdana, 20" HeightRequest="30" />
+                                
+                            <StackLayout>
+                                <Label />
+                                <BoxView HeightRequest="1"  BackgroundColor="Black" HorizontalOptions="FillAndExpand" />
+                                <Label />
+                            </StackLayout>
+                            <Label x:Name="BkpViagem" Text="Backup de viagem" TextColor="Black" Font="Verdana, 20" HeightRequest="30"/>
+                            <Label Text="ISphere Qr Code Reader" TextColor="Black" Font="Verdana, 20" HeightRequest="30" x:name="QrCode"/>
+                            <!--
+                            <Label Text="ISphere MRZ Reader" TextColor="Black" Font="Verdana, 20" HeightRequest="30">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                    Tapped="ClickMrz1"
+                                    NumberOfTapsRequired="1" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                            <Label Text="ISphere Scanner" TextColor="Black" Font="Verdana, 20" HeightRequest="30">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                    Tapped="ClickScanner1"
+                                    NumberOfTapsRequired="1" />
+                                </Label.GestureRecognizers>
+                            </Label>-->
+                            <Label x:Name="lblSair" Text="Sair" TextColor="Black" Font="Verdana, 20" HeightRequest="30" />
+                                  
+
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
